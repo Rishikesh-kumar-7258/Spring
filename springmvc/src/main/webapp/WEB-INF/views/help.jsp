@@ -17,8 +17,8 @@
 	<h1>My name is ${name }</h1>
 
 	<hr>
-	<%-- <c:forEach var="mark" items="${marks }">
+	<c:forEach var="mark" items="${marks }">
 		<h1>${mark }</h1>
-	</c:forEach> --%>
+	</c:forEach>
 </body>
 </html>

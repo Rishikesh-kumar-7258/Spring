@@ -6,12 +6,13 @@ import java.util.ArrayList;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class HomeController {
 	
-	@RequestMapping("/home")
+	@RequestMapping("/")
 	public String Home(Model model) {
 		System.out.println("This is home url");
 		model.addAttribute("name", "Rishikesh Kumar");
@@ -27,7 +28,7 @@ public class HomeController {
 		return "index";
 	}
 	
-	@RequestMapping("/about")
+	@RequestMapping(path="/about", method = RequestMethod.POST)
 	public String About() {
 		System.out.println("This is about url");
 		return "about";
