@@ -7,6 +7,7 @@ public class Section {
 	
 	private final int id;
 	private String name;
+	
 	public Section(String name) {
 		super();
 		this.id = Section.counter.getAndIncrement();
